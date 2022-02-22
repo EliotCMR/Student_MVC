@@ -1,0 +1,15 @@
+table th {
+    border: black solid 1px;
+}
+
+table td {
+    border: black solid 1px;
+}
+
+strong {
+    color: red;
+}
+
+td a:visited {
+    color: white;
+}
