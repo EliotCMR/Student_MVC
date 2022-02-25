@@ -1,5 +1,4 @@
 <table>
-
     <tr>
         <th>Id</th>
         <th>Nom</th>
@@ -12,8 +11,8 @@
             <td><?= $tag['id'] ?></td>
             <td><?= $tag['name'] ?></td>
             <td><?= $tag['description'] ?></td>
-            <td>🖊️</td>
             <td><a href="index.php?table=tag&id=<?= $tag['id'] ?>&op=delete">❌</a></td>
+            <td><a href="index.php?table=tag&id=<?= $tag['id'] ?>&op=update">🖊️</a></td>
         </tr>
     <?php } ?>
 

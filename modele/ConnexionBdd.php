@@ -2,23 +2,23 @@
 
 require_once('env.php');
 
-$bdd_username = $bdd_username ?? 'src_mariadb';
-$bdd_password = $bdd_password ?? 'src_mariadb';
+$bdd_username = $bdd_username ?? 'student';
+$bdd_password = $bdd_password ?? 'student';
 $bdd_host = $bdd_host ?? 'localhost';
 $bdd_port = $bdd_port ?? 3306;
-$bdd_dbname = $bdd_dbname ?? 'src_mariadb';
+$bdd_dbname = $bdd_dbname ?? 'student';
 
 // DSN : Data Source Name
 $dsn = "mysql:host=$bdd_host;port=$bdd_port;dbname=$bdd_dbname;charset=UTF8";
 
-$options =
-    [
-        PDO::ATTR_ERRMODE =>
-        PDO::ERRMODE_EXCEPTION,
+$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+[
+    PDO::ATTR_ERRMODE =>
+    PDO::ERRMODE_EXCEPTION,
 
-        PDO::ATTR_DEFAULT_FETCH_MODE =>
-        PDO::FETCH_ASSOC
-    ];
+    PDO::ATTR_DEFAULT_FETCH_MODE =>
+    PDO::FETCH_ASSOC //pas de doublons
+];
 
 // PDO : PHP Data Objects
 
